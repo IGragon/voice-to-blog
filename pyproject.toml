@@ -1,0 +1,46 @@
+[project]
+name = "voice-to-blog"
+version = "0.1.0"
+description = "A personalized, voice-first content studio with safe agent-driven publishing operations."
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.3.0,<5",
+    "pytest>=8.4.0,<9",
+    "ruff>=0.14.0,<0.15",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = ["data", "models"]
+
+[tool.ruff.lint]
+select = [
+    "A",
+    "B",
+    "C4",
+    "E",
+    "F",
+    "I",
+    "N",
+    "PIE",
+    "PT",
+    "PTH",
+    "RUF",
+    "SIM",
+    "UP",
+    "W",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
