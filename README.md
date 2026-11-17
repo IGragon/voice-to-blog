@@ -3,8 +3,8 @@
 Voice-to-Blog is a personal writing assistant that turns spoken ideas into drafts
 using the author's writing style. It is developed for the ML System Design course.
 
-The first PoC covers audio or text input, transcription, transcript review and
-one draft for a blog or Telegram. English and Russian are supported; output length
+The PoC takes an audio recording, transcribes it locally, and creates
+one draft for a blog or Telegram. It supports English and Russian. Output length
 is configurable, typically around 300 words and up to 550 for a detailed post.
 
 HW2 documents data preparation, exploratory analysis and model evaluation.
